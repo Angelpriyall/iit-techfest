@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Upload Files</title>
+  </head>
+  <body>
+    <h1>Upload Group and Hostel Files</h1>
+    <form method="POST" enctype="multipart/form-data" action="{{ url_for('upload_files') }}">
+      <label for="group_file">Group File:</label>
+      <input type="file" id="group_file" name="group_file"><br><br>
+      <label for="hostel_file">Hostel File:</label>
+      <input type="file" id="hostel_file" name="hostel_file"><br><br>
+      <input type="submit" value="Upload">
+    </form>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul>
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+  </body>
+</html>

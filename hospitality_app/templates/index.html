@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitality Room Allocation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="container">
+
+    <h1>Upload CSV Files for Room Allocation</h1>
+     <a href="{{ url_for('logout') }}">Logout</a>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+     <div class="alert alert-info">
+             {% for category, message in messages %}
+               <p class="{{ category }}">{{ message }}</p>
+             {% endfor %}
+             </div>
+        <ul class="flashes">
+        {% for category, message in messages %}
+          <li class="{{ category }}">{{ message }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+    <form id="upload-form" action="/upload" method="post" enctype="multipart/form-data">
+         <div class="form-group">
+        <label for="group_file">Group Information CSV:</label>
+        <input type="file" id="group_file" name="group_file" required><br><br>
+               </div>
+         <div class="form-group">
+        <label for="hostel_file">Hostel Information CSV:</label>
+        <input type="file" id="hostel_file" name="hostel_file" required><br><br>
+               </div>
+        <button type="submit">Upload and Allocate Rooms</button>
+    </form>
+    <div id="loading"  class="text-center" style="display:none;">
+        <img src="{{ url_for('static', filename='loading.gif') }}" alt="Loading...">
+        <p>Processing...</p>
+    </div>
+    <script>
+        document.getElementById('upload-form').addEventListener('submit', function() {
+            document.getElementById('loading').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
