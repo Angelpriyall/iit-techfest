@@ -1,0 +1,17 @@
+Final Code Summary
+Here’s a summary of the main code components you’ve implemented:
+
+app.py:
+
+Handles routes, file uploads, room allocation, and error handling.
+templates/:
+
+index.html: File upload form and user interface.
+login.html: Login page for authentication.
+static/:
+
+style.css: Custom styles for the application.
+loading.gif: Loading indicator during file processing.
+Error Handling and Validation:
+
+Ensures the application handles errors gracefully and provides informative feedback to users.
