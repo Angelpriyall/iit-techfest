@@ -1,0 +1,48 @@
+Step 2: Set Up a Virtual Environment
+sh
+Copy code
+python -m venv venv
+# On Windows
+.\venv\Scripts\activate
+# On macOS/Linux
+source venv/bin/activate
+
+
+
+Step 3: Install Required Packages
+sh
+Copy code
+pip install -r requirements.txt
+
+
+
+Step 4: Set Up Environment Variables
+Create a .env file in the project root:
+
+env
+Copy code
+SECRET_KEY=your_secret_key
+MAIL_USERNAME=your_email@gmail.com
+MAIL_PASSWORD=your_email_password
+
+
+Step 5: Create Necessary Directories
+sh
+Copy code
+mkdir uploads output
+
+
+
+Step 6: Run the Application
+sh
+Copy code
+flask run
+Optional: Set Up VS Code for Development
+Open the project in VS Code.
+Set up the Python interpreter.
+Configure debugging.
+
+
+Step 7: Run Debugger
+Click on the Run and Debug icon.
+Click on the green play button next to the Python: Flask configuration.
