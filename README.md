@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a room allocation system using Flask, which allows users to upload group and hostel information via CSV files, processes the data, and allocates rooms based on gender and availability.
+This project is a room allocation system using vs code, which allows users to upload group and hostel information via CSV files, processes the data, and allocates rooms based on gender and availability.
 
 ## Prerequisites
 
@@ -20,3 +20,8 @@ Clone this repository to your local machine:
 
 ```bash
 git clone https://github.com/Angelpriyall/iit-techfest/tree/main
+
+ cd your-repository
+
+ python -m venv venv
+venv\Scripts\activate
