@@ -1,4 +1,4 @@
-# Flask Hospitality Project
+# digitalisation ok hospital 
 
 ## Setup Instructions
 
