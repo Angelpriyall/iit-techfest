@@ -1,4 +1,4 @@
-# digitalisation ok hospital 
+# digitalisation of hospital 
 
 ## Setup Instructions
 
