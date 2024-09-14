@@ -23,14 +23,13 @@ git clone https://github.com/Angelpriyall/iit-techfest/tree/main
 
  
 
-
-2. Navigate to the Project Directory
+### 2. Navigate to the Project Directory
 Move into the project directory:
 
 bash
 Copy code
 cd your-repository
-3. Create and Activate a Virtual Environment (Optional but Recommended)
+###3. Create and Activate a Virtual Environment (Optional but Recommended)
 Creating a virtual environment helps manage dependencies:
 
 On Windows:
@@ -78,30 +77,6 @@ Use the following credentials to log in:
 
 Username: angelpriyal
 Password: hello
-9. Using the Application
-Log in using the credentials provided.
-Navigate to the upload page.
-Upload the required "Group" and "Hostel" CSV files.
-The system will process the files and allocate rooms based on the data.
-Download the allocation results once processing is complete.
-CSV File Format
-Group CSV: Should contain columns like Group ID, Members, and Gender.
-Hostel CSV: Should contain columns like Hostel Name, Room Number, Capacity, and Gender.
-Troubleshooting
-If you encounter issues:
-
-Verify Python and pip are correctly installed.
-Ensure all dependencies are installed (pip install -r requirements.txt).
-Confirm the .env file is set up with valid credentials.
-Check that the CSV files are correctly formatted.
-Contributing
-If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
-
-License
-Include your project's licensing information here, if applicable.
-
-markdown
-Copy code
 
 ### Key Points Covered:
 
@@ -112,4 +87,4 @@ Copy code
 - **Contributing:** Information on how others can contribute to the project.
 - **License:** Placeholder for license information. 
 
-This format ensures that anyone who clones your repository can quickly understand how to set up and use
+This format ensures that anyone who clones my repository can quickly understand how to set up and use
