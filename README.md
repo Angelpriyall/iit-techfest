@@ -21,12 +21,7 @@ Clone this repository to your local machine:
 ```bash
 git clone https://github.com/Angelpriyall/iit-techfest/tree/main
 
- ### 1. Clone the Repository
-
-Clone this repository to your local machine:
-
-```bash
-git clone
+##
 
 ### 2 . Navigate to the Project Directory
 Move into the project directory:
